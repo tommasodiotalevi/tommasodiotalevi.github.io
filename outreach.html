@@ -99,27 +99,21 @@
               <header>
                 <h3>Send me a message!</h3>
               </header>
-              <form name="formmail" method="post" action="formmail.php" onsubmit="return controlloForm()" target="myIframe">
-                <input name="successo" value="thank_you.html" type="hidden"> <label
+              <form method="POST" action="https://formspree.io/f/mdoveekj">
+                <label
                   for="nome"
                   style="color: white;">First
-                  and Last name</label> <input id="nome" name="nome" placeholder="Name"
+                  and Last name </label> <input name="nome" placeholder="Your full name (required)"
                   type="text">
                 <br>
-                <label for="email" style="color: white;">Email</label> <input id="email"
-                  name="email"
-                  placeholder="Your email address"
+                <label for="email" style="color: white;">Email</label> <input name="email"
+                  placeholder="Your email address (required)"
                   type="text">
                 <br>
-                <label for="msg" style="color: white;">Message</label> <textarea
-id="msg"
-name="msg"
-placeholder="Write your message"></textarea>
+                <label for="msg" style="color: white;">Message</label> <textarea name="msg" 
+                placeholder="Write your message"></textarea>
                 <br>
-				<label for="cap" style="color: white;">Tick the box to prove you are a human!</label>
-                <div class="g-recaptcha" data-sitekey="6LdJJgEVAAAAACQmhIE4pnR4Fqsj-mDWVY4kEWSk"></div>
                 <input value="Send request" type="submit"> </form>
-			    <iframe name="myIframe"></iframe>
               <br>
               <!-- Copyright -->
               <div class="copyright">
@@ -142,7 +136,6 @@ placeholder="Write your message"></textarea>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-	<script src="https://www.google.com/recaptcha/api.js"></script>
     <script src="assets/js/checkmail.js"></script>
   </body>
 </html>
