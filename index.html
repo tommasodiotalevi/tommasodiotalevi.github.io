@@ -179,7 +179,7 @@
               <header>
                 <h3>Send me a message!</h3>
               </header>
-              <form name="formmail" method="post" action="https://formspree.io/f/mdoveekj" target="myIframe">
+              <form method="POST" action="https://formspree.io/f/mdoveekj" target="myIframe">
                 <input name="successo" value="thank_you.html" type="hidden"> <label
                   for="nome"
                   style="color: white;">First
@@ -191,14 +191,10 @@
                   placeholder="Your email address"
                   type="text">
                 <br>
-                <label for="msg" style="color: white;">Message</label> <textarea
-id="msg"
-name="msg"
-placeholder="Write your message"></textarea>
+                <label for="msg" style="color: white;">Message</label> <textarea id="msg"
+                name="msg" placeholder="Write your message"></textarea>
                 <br>
-				<label for="cap" style="color: white;">Tick the box to prove you are a human!</label>
-                <div class="g-recaptcha" data-sitekey="6LdJJgEVAAAAACQmhIE4pnR4Fqsj-mDWVY4kEWSk"></div>
-                <input value="Send request" type="submit"> </form>
+                <button type="submit"> Submit </button> </form>
 				<iframe name="myIframe"></iframe>
               <br>
               <!-- Copyright -->
